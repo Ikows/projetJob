@@ -1,9 +1,115 @@
+
+/* CSS Global */
+
+@font-face {
+	font-family: 'Mpsb';
+	src: url('fonts/MyriadPro-Semibold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	background-color: #191919;
+	font-family: 'Roboto';
+	color: white;
+}
+
+h3 {
+	font-family: 'Mpsb';
+	color: white;
+	margin-bottom: 2%;
+}
+
+
+/* NavBar */
+
+#photoProfil {
+	width: 200px;
+	border: 5px solid white;
+	margin-left: 50px;
+}
+
+#navBar {
+	background-color: white !important;
+	font-size: 2rem;
+}
+
+#navBar a {
+	color: #191919;
+}
+
+.nav-link {
+	margin-right: 50px;
+	width: 200px;
+	text-align: center;
+}
+
+.nav-link:hover {
+	color: white !important;
+	background-color: #191919;
+}
+
+#titrePage {
+	margin-left: 275px;
+	font-family: 'Mpsb';
+	font-size : 2rem;
+}
+
+/* HEADER */
+
+
+header {
+	margin-top: 250px;
+	margin-bottom: 200px;
+}
+
+.card {
+	background-color: #262626;
+	color: white;
+}
+
+#boutonESP {
+	background-color: #191919;
+	color: white;
+	font-weight: bold;
+	display: block;
+	width: 150px;
+	border: 1px solid #191919;
+}
+
+#boutonESP:hover {
+	background-color: white;
+	color: #191919;
+}
+
+
 /* CSS pour Timeline Actualités */
+#sectionTime {
+	background-color: #262626;
+	padding-bottom: 150px;
+	padding-top: 150px;
+}
+
+
+
+#blocActus {
+	background-color: #191919;
+	border-radius: 5px;
+}
 
 ul.timeline {
     list-style-type: none;
     position: relative;
+    color: white;
+    padding: 50px;
 }
+
+.aTimeline {
+	color: white;
+	font-weight: bold;
+}
+
 ul.timeline:before {
     content: ' ';
     background: #d4d9df;
@@ -11,7 +117,7 @@ ul.timeline:before {
     position: absolute;
     left: 29px;
     width: 2px;
-    height: 100%;
+    height: 80%;
     z-index: 400;
 }
 ul.timeline > li {
@@ -20,13 +126,103 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
     content: ' ';
-    background: white;
+    background: #191919;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #22c0e8;
+    border: 3px solid white;
     left: 20px;
     width: 20px;
     height: 20px;
     z-index: 400;
 }
+
+/* Section BIO */
+
+#sectionBio {
+
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+#sectionBio img {
+
+	height: 600px;
+	margin-left: 10%;
+}
+
+#sectionBio p {
+	width: 85%;
+}
+
+#divBio {
+	padding: 50px;
+}
+
+#ovni {
+ display: block;
+ margin-left: 15%;"
+}
+
+/* Responsive Options */
+
+@media (max-width: 1550px) {
+	
+	.nav-link {
+	margin-right: 50px;
+	width: 150px;
+	font-size: 1.5rem;
+}
+
+}
+
+@media (max-width: 1250px) {
+	
+	.nav-link {
+	margin-right: 25px;
+	width: 150px;
+	font-size: 1.3rem;
+}
+
+	#sectionBio img {
+		display: none;
+	}
+
+		h3 {
+		text-align: center;
+	}
+
+	#ovni {
+		display: inline;
+		margin: 0;
+	}
+
+@media (max-width: 1100px) {
+	
+	.nav-link {
+	margin-right: 25px;
+	width: 70px;
+	font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+	
+	.nav-link {
+	font-size: 1.5rem;
+	text-align: left;
+}
+
+	#titrePage {
+		margin-left: 0px;
+	}
+
+	#photoProfil {
+		display: none;
+	}
+
+
+
+}
+
+
+
