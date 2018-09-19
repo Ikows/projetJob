@@ -8,7 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
     <title>CV Steve Jobs</title>
   </head>
@@ -30,57 +33,44 @@
   		</div>
   	</nav>
 
-  	<section>
+  	<section class="contact-form-wrapper">
   		<form class="form-horizontal">
-  		<fieldset>
+        <div class="container-fluid">
+        <h3 class="pb-3 pt-2 mb-5">Contact</h3>
+    		<div class="card">
 
-  		<!-- Form Name -->
-  		<legend>Contact</legend>
+    		<!-- Form -->
+          <div class="row name">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nom">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Prénom">
+            </div>
+          </div>
+      		<div class="form-group">
+      		  <label class="col" for="textinput"></label>  
+      		  <div class="mail">
+      		    <input id="textinput" name="textinput" placeholder="@" class="form-control input-md" required="" type="text">    
+      		  </div>
+      		</div>
+      		<div class="form-group">
+      		  <label class="col" for="textarea"></label>
+      		  <div class="col textarea">                     
+      		    <textarea class="form-control" id="textarea" name="textarea" rows="5" size="50" required=""></textarea>
+      		  </div>
+      		</div>
+      		<!-- Button -->
+      		<div class="form-group">
+      		  <label class="col control-label" for="submit"></label>
+      		  <div class="col-xs-4 float-right button">
+      		    <button id="submit" name="submit" class="btn btn-inverse">Envoyer</button>
+      		  </div>
+          </div>
 
-  		<!-- Text input-->
-  		<div class="form-group">
-  		  <label class="col-md-4 control-label" for="textinput"></label>  
-  		  <div class="col-md-4">
-  		  <input id="textinput" name="textinput" placeholder="Nom" class="form-control input-md" required="" type="text">
-  		    
-  		  </div>
-  		</div>
+    		</div>
 
-  		<!-- Text input-->
-  		<div class="form-group">
-  		  <label class="col-md-4 control-label" for="textinput"></label>  
-  		  <div class="col-md-4">
-  		  <input id="textinput" name="textinput" placeholder="Prénom" class="form-control input-md" required="" type="text">
-  		    
-  		  </div>
-  		</div>
-
-  		<!-- Text input-->
-  		<div class="form-group">
-  		  <label class="col-md-4 control-label" for="textinput"></label>  
-  		  <div class="col-md-4">
-  		  <input id="textinput" name="textinput" placeholder="@" class="form-control input-md" required="" type="text">
-  		    
-  		  </div>
-  		</div>
-
-  		<!-- Textarea -->
-  		<div class="form-group">
-  		  <label class="col-md-4 control-label" for="textarea"></label>
-  		  <div class="col-md-4">                     
-  		    <textarea class="form-control" id="textarea" name="textarea"></textarea>
-  		  </div>
-  		</div>
-
-  		<!-- Button -->
-  		<div class="form-group">
-  		  <label class="col-md-4 control-label" for="submit"></label>
-  		  <div class="col-md-4">
-  		    <button id="submit" name="submit" class="btn btn-inverse">Envoyer</button>
-  		  </div>
-  		</div>
-
-  		</fieldset>
+    		</div>
   		</form>
 
   		
@@ -88,27 +78,28 @@
 
 
 
-  	<footer>
-  		<div class="container-fluid">
-  			<div class="row">
-  				<div class="col">
-  					<a href="">Mentions légales</a>
-  				</div>
-  				<div class="col">
-  					<a href="">Politique de confidentialité</a>
-  				</div>
-  				<div class="col">
-  					<a href="">Contact</a>
-  				</div>
-  				<div class="col">
-  					<i class="fa fa-linkedin"></i>
-  					<i class="fa fa-facebook"></i>
-  					<i class="fa fa-twitter"></i>
-  					<i><img src="images/logoApple.png"></i>
-  				</div>
-  			</div>
-  		</div>
-  	</footer>
+      <footer>
+        <div class="container-fluid wrap">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a class="link" href="">Mentions légales</a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a class="link" href="">Politique de confidentialité</a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a class="link" href="contact.html">Contact</a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="https://www.linkedin.com/company/apple/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/apple/"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/Apple"><i class="fa fa-twitter"></a></i>
+              <a href="https://www.apple.com/"><i><img src="images/logoApple.png"></i></a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
