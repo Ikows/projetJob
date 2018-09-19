@@ -68,7 +68,7 @@ h4 {
 section {
 
     margin-top: 250px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .contact-form-wrapper form {
@@ -103,7 +103,6 @@ footer {
     background-color: white;
     font-family: 'Roboto';
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
