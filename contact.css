@@ -68,6 +68,7 @@ h4 {
 section {
 
     margin-top: 250px;
+    margin-bottom: 100px;
 }
 
 .contact-form-wrapper form {
@@ -180,6 +181,7 @@ footer img {
     .nav-link {
     font-size: 1.5rem;
     text-align: left;
+    width: 100px;
 }
 
     #titrePage {

@@ -370,6 +370,7 @@ footer img {
   .nav-link {
   font-size: 1.5rem;
   text-align: left;
+  width: 100px;
 }
 
   #titrePage {
@@ -379,6 +380,34 @@ footer img {
   #photoProfil {
     display: none;
   }
+
+
+
+}
+
+@media (max-width: 400px) {
+
+  .gauche {
+    margin-left: 100px;
+  }
+
+  .droite {
+    margin-right: 100px;
+  }
+
+  .colGauche {
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  .colDroite {
+    margin-right: auto;
+    margin-left: 20px;
+    text-align: left !important;
+  }
+
+  
 
 }
 
